@@ -86,6 +86,25 @@ Tableauで同じことをするためには、下記のように左側のディ�
 
 ![](.gitbook/assets/select02.png)
 
+`SELECT`句に記載しなくても、条件付けることはできます。`area`が大阪だけに条件づけます。
+
+```text
+SELECT
+    cu_id,
+    lastname,
+    gender
+FROM
+    users
+WHERE
+    gender = "男性" AND area = "大阪";
+```
+
+Tableauも同様です。フィルターに`area`をドラック＆ドロップし、右側のチェックボックスで大阪を選択します。
+
+![](.gitbook/assets/select03.png)
+
+Tableauでドラック＆ドロップしている操作の裏側では、このようにデータ構造を変形させていることになります。それを
+
 ### 2.2 データ型
 
 ### 2.3 ディメンジョンとメジャー
